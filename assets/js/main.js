@@ -15,8 +15,8 @@ for (i = 2; i <= 100; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then(response => response.json())
     .then(data => {
-        window[a+i] = new Input(data.name,data.height,data.weight,data.sprites.other.dream_world.front_default)
         
+        window[a+i] = new Input(data.name,data.height,data.weight,data.sprites.other.dream_world.front_default)
         allPokemon.push[window[a+i]]
     })
    

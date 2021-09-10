@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#computerArea, #playerArea {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#computerArea {
+    border-bottom: 1px solid black;
+}
+#computerPointsOutput, #computerCardsLeftOutput, #playerPointsOutput, #playerCardsLeftOutput {
+    align-self: flex-start;
+    padding: 10px 0 0 10px;
+}
+/* CARDS */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    background-color: #aaa;
+    border-radius: 5px;
+    background: #aaa url(https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg) bottom right no-repeat;
+    padding: 5px;
+}
+.card > p {
+    width: fit-content;
+    background: #aaaaaabb;
+    border-radius: 5px;
+}
