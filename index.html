@@ -13,10 +13,8 @@
 <body>
   <section>
     <h1>Pokemon Game Card</h1>
-    <button id="art">Let's play</button>
+    <button id="art" onclick="location.href='assets/html/game-window.html';">Let's play</button>
   </section>
-
-  <!-- <input class=“ButtonClass“ type=“button“ value=“Hier wird geklickt“ onklick=“window.location.href=‘Link‘ “/>. -->
 
   <div>
     <!-- This doesn't worked for chrome: <video id="video-bg" src="assets/img/Pokemon4800.mp4" autoplay="true" loop type="video/mp4" ></video> -->
@@ -26,9 +24,12 @@
 
   <!-- This doesn't worked for chrome: <audio id="audioPokemon" src="assets/audio/bensound-birthofahero.mp3" autoplay="true" loop controls -->
 
-    <!-- <audio id="yourAudioTag" src="assets/audio/bensound-birthofahero.mp3" controls autoplay loop ></audio> -->
+  <!-- <audio id="yourAudioTag" src="assets/audio/bensound-birthofahero.mp3" controls autoplay loop ></audio> -->
 
-    <audio id="audio" controls=""><source src="assets/audio/bensound-birthofahero.mp3" type="audio/mp3">Please update your browser does not support the audio element.</audio>
+  <audio id="audioPokemon" controls="">
+    <source src="assets/audio/bensound-birthofahero.mp3" type="audio/mp3">Please update your browser does not support
+    the audio element.
+  </audio>
 
   <script src="assets/js/main.js"></script>
 </body>
