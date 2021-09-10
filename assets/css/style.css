@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Tourney', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Tourney', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: white;
+  cursor: pointer;
+}
+
+#video-bg {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	/* max-width: 100%;
+	max-height: 100%; */
+  height: 100%;
+  width: 100%;
+	z-index: -1000;
+	overflow: hidden;
+}
+
+h1{
+  font-family: 'Tourney', cursive;
+  font-size: 4.5em;
+  text-align: center;
+  margin-top: 25%;
+}
+
+/*------------ BUTTON -------------- */
+#art{
+  font-size: 2em;
+  background: grey;
+  font-family: 'Tourney', cursive;
+  height: 55px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  width: 220px;
+  display: block;
+  margin: 4% auto;
+  opacity: 0.88;
+
+}
+
+#art:before {
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity.3s ease-in-out;
+  border-radius: 10px;
+  content: '';
+}
+
+/* #art:active {
+  color: #000
+}
+
+#art:active:after {
+  background: transparent;
+} */
+
+#art:hover:before {
+  opacity: 1;
+}
+
+#art:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 	  #1a1a1a;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@keyframes glowing {
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+  0% { background-position: 0 0; }
+}
+
+#audioPokemon{
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(85%) invert(86%);
+  width: 200px;
+  height: 25px;
+  opacity: 0.4;
+  margin: 10% 82%;
+}
+
+
+
