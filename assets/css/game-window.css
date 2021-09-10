@@ -23,3 +23,19 @@ body {
     align-self: flex-start;
     padding: 10px 0 0 10px;
 }
+/* CARDS */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    background-color: #aaa;
+    border-radius: 5px;
+    background: #aaa url(https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg) bottom right no-repeat;
+    padding: 5px;
+}
+.card > p {
+    width: fit-content;
+    background: #aaaaaabb;
+    border-radius: 5px;
+}
