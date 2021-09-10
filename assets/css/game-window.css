@@ -13,6 +13,25 @@ body {
     justify-content: center;
     font-family: "Aldrich", sans-serif;
     color: white;
+    background: linear-gradient(
+        170deg,
+        rgba(49, 57, 73, 0.8) 20%,
+        rgba(49, 57, 73, 0.5) 20%,
+        rgba(49, 57, 73, 0.5) 35%,
+        rgba(41, 48, 61, 0.6) 35%,
+        rgba(41, 48, 61, 0.8) 45%,
+        rgba(31, 36, 46, 0.5) 45%,
+        rgba(31, 36, 46, 0.8) 75%,
+        rgba(49, 57, 73, 0.5) 75%
+    ),
+    linear-gradient(
+            45deg,
+            rgba(20, 24, 31, 0.8) 0%,
+            rgba(41, 48, 61, 0.8) 50%,
+            rgba(82, 95, 122, 0.8) 50%,
+            rgba(133, 146, 173, 0.8) 100%
+        )
+        #313949;
 }
 #computerArea,
 #playerArea {
@@ -41,7 +60,6 @@ body {
     flex-direction: column;
     width: 150px;
     height: 200px;
-    background-color: #aaa;
     border-radius: 5px;
     background: #aaa
         url(https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg) bottom
@@ -64,36 +82,6 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 3rem;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    background: linear-gradient(
-            170deg,
-            rgba(49, 57, 73, 0.8) 20%,
-            rgba(49, 57, 73, 0.5) 20%,
-            rgba(49, 57, 73, 0.5) 35%,
-            rgba(41, 48, 61, 0.6) 35%,
-            rgba(41, 48, 61, 0.8) 45%,
-            rgba(31, 36, 46, 0.5) 45%,
-            rgba(31, 36, 46, 0.8) 75%,
-            rgba(49, 57, 73, 0.5) 75%
-        ),
-        linear-gradient(
-                45deg,
-                rgba(20, 24, 31, 0.8) 0%,
-                rgba(41, 48, 61, 0.8) 50%,
-                rgba(82, 95, 122, 0.8) 50%,
-                rgba(133, 146, 173, 0.8) 100%
-            )
-            #313949;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
-        sans-serif;
-}
 
 /*
  * Animated CSS button
