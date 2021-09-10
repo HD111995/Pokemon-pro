@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+/* font-family: 'Aldrich', sans-serif; */
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Aldrich', sans-serif;
 }
 #computerArea, #playerArea {
     height: 50%;
@@ -21,8 +25,10 @@ body {
 }
 #computerPointsOutput, #computerCardsLeftOutput, #playerPointsOutput, #playerCardsLeftOutput {
     align-self: flex-start;
-    padding: 10px 0 0 10px;
+    margin-left: 10%;
 }
+
+
 /* CARDS */
 .card {
     display: flex;
@@ -33,9 +39,14 @@ body {
     border-radius: 5px;
     background: #aaa url(https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg) bottom right no-repeat;
     padding: 5px;
+    
 }
 .card > p {
     width: fit-content;
     background: #aaaaaabb;
     border-radius: 5px;
+}
+
+#playerCards{
+    display: flex;
 }
